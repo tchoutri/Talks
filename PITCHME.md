@@ -8,6 +8,7 @@
 ### Sommaire
 
 * La 5<sup>e</sup> dimension
+* Point de cours
 * Après l'effort, le réconfort
 
 
@@ -34,10 +35,10 @@ xs = _
 λ❯ take 5 liste
 [1,2,3,4,5]
 it :: [Int]
-
-
 ```
+
 ---
+
 ```Haskell
 λ❯ take 5 liste
 [1,2,3,4,5]
@@ -47,5 +48,12 @@ liste = 1 : 2 : 3 : 4 : 5 : _
 ```
 ---
 
+* Thunk
+  Un pointeur vers un calcul qui ne s'effectuera que lorsqu'il sera demandé
 
-### Après l'effort, le réconfort
+* Gargage Collector
+  La *garbage collection* est la gestion automatique du recyclage de la mémoire
+
+---
+
+
