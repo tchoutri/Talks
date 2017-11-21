@@ -5,12 +5,7 @@
 
 ---
 
-### Sommaire
-
-* La 5<sup>e</sup> dimension
-* Point de cours
-* Après l'effort, le réconfort
-
+## La 5e dimension
 
 ---
 
@@ -53,10 +48,23 @@ liste = 1 : 2 : 3 : 4 : 5 : _
 <dl>
 <dt>Thunk</dt>
   <dd>Un pointeur vers un calcul qui ne s'effectuera que lorsqu'il sera demandé</dd>
-
 <dt>Gargage Collector</dt>
   <dd>La *garbage collection* est la gestion automatique du recyclage de la mémoire</dd>
 </dl>
+
+---
+
+#### ⚠️ HALTE ⚠️
+
+Le *GC* ne recyclera pas la liste si il reste un pointeur vers le début (*head*) de cette liste !
+
+---
+
+#### ⚠️ HALTE ⚠️
+
+Le *GC* ne recyclera pas la liste si il reste un pointeur vers le début (*head*) de cette liste !
+
+Cela se traduira en pratique par la conservation de la liste en mémoire, *no matter what*.
 
 ---
 
