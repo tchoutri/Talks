@@ -107,10 +107,14 @@ somme [1..5]
 
 ### Foldr
 
+Nous avons écrit à la main une implémentation de `sum` avec `foldr`:  
+
 ```Haskell
 λ❯ foldr (\x y -> concat ["(",x," + ",y,")"]) "0" (map show [1..5]) -- piqué de chez Wikipédia!
 "(1 + (2 + (3 + (4 + (5 + 0)))))"
 ```
+
+---
 
 ### Mais tout n'est pas perdu
 
@@ -130,4 +134,7 @@ it :: (Enum b, Num b) => b
 
 ### Mais pourquoi ?
 
-Et bien     
+>« Et bien Jamie, il se trouve que l'implémentation <b>stricte</b> de `foldl` nous permet<br />
+>de ne pas nous trimballer une tripotée de *thunks* non-évalués ! »
+
+-- Fred, dans l'univers parallèle où ils explorent la programmation fonctionnelle.
