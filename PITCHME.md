@@ -1,7 +1,7 @@
 <!-- $theme: gaia -->
 <!-- template: invert -->
 
-<img src="assets/images/haskell-paris.jpeg" width="307" align="right"/>
+<img src="images/haskell-paris.jpeg" width="307" align="right"/>
 
 # Lazy evaluation
 ## for the eager beginner
@@ -10,7 +10,7 @@
 
 ---
 
-<img src="assets/images/haskell-paris.jpeg" width="307" align="right"/>
+<img src="images/haskell-paris.jpeg" width="307" align="right"/>
 
 # Lazy evaluation
 
