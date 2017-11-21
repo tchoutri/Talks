@@ -77,7 +77,7 @@ xs :: [Int]
 @[1](On lance ghci en lui allouant 100Mo de mémoire vive)
 @[4](On remplit la liste d'un milliard d'éléments)
 @[6](On tente la somme)
-@[7-9](☠️ RIP)
+@[7-9](☠️ RIP ☠️)
 
 ---
 
@@ -100,9 +100,12 @@ somme [1..5]
 ➡️ 1 + (2 + (3 + (4 + (5 + 0))))
 ```
 
+@[1](On commence avec presque rien…)
+@[5](… Et on fini par étirer l'accordéon !)
+
 ---
 
-## En pratique
+### Mais tout n'est pas perdu
 
 ```Haskell
 $ ghci +RTS -M30m
@@ -113,4 +116,6 @@ Loaded GHCi configuration from /home/tchoutri/.ghci
 it :: (Enum b, Num b) => b
 ```
 @[1](On alloue 30Mo de RAM)
-@[3](On retente l'expérience avec néanmoins l'utilisation de la version stricte de `foldl`)
+@[4](On retente l'expérience avec néanmoins l'utilisation de la version stricte de `foldl`)
+@[5](On a notre résultat 🎉)
+
