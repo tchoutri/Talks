@@ -24,28 +24,21 @@ xs = _
 
 ```
 ---
-### La 5e dimension
-
 * Le `_` signifie que la variable `xs` n'a pas été évaluée par l'environnement
-
 ---
-### La 5e dimension
-
 * Le `_` signifie que la variable `xs` n'a pas été évaluée par l'environnement
 
 * ➡️ Cette liste à un milliard d'éléments ne sera peut-être jamais allouée en mémoire ! 🎉
 ---
-### La 5e dimension
-
 ```Haskell
 λ❯ take 5 liste
 [1,2,3,4,5]
 it :: [Int]
-```
----
-### La 5e dimension
+
 
 ```
+---
+```Haskell
 λ❯ take 5 liste
 [1,2,3,4,5]
 it :: [Int]
