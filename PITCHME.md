@@ -53,14 +53,7 @@ liste = 1 : 2 : 3 : 4 : 5 : _
 </dl>
 
 ---
-
-#### ⚠️ HALTE ⚠️
-
-Le *GC* ne recyclera pas la liste si il reste un pointeur vers le début (*head*) de cette liste !
-
----
-
-#### ⚠️ HALTE ⚠️
+### ⚠️ HALTE ⚠️
 
 Le *GC* ne recyclera pas la liste si il reste un pointeur vers le début (*head*) de cette liste !
 
@@ -68,4 +61,20 @@ Cela se traduira en pratique par la conservation de la liste en mémoire, *no ma
 
 ---
 
+@title[En pratique]
 
+```Haskell
+$ ghci +RTS -M100m
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/tchoutri/.ghci
+λ❯ let xs = [1..10^6] :: [Int]
+xs :: [Int]
+λ❯ sum xs
+<interactive>: Heap exhausted;
+<interactive>: Current maximum heap size is 104857600 bytes (100 MB).
+<interactive>: Use `+RTS -M<size>' to increase it.
+```
+---
+
+@[1](On lance `ghci` avec l'option `-M` qui permet de limiter l'allocation mémoire à 100Mo.)
+@[2](Foobar.)
