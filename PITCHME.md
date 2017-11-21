@@ -134,8 +134,7 @@ it :: (Enum b, Num b) => b
 
 ### Mais pourquoi ?
 
-<img src="pacman.jpeg" width="200" height=200 align="right"/>
->« Et bien Jamie, il se trouve que l'implémentation <b>stricte</b> de `foldl` nous permet<br />
+>« Et bien Jamie, il se trouve que l'implémentation <b>stricte</b> de `foldl` nous permet
 >de ne pas nous trimballer une tripotée de *thunks* non-évalués ! »
 
 -- Fred, dans l'univers parallèle où ils explorent la programmation fonctionnelle.
