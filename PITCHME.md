@@ -16,11 +16,11 @@
 ### La 5e dimension
 
 ```Haskell
-  λ❯ let xs = [1..1000000000] :: [Int]
-  xs :: [Int]
+λ❯ let liste = [1..1000000000] :: [Int]
+xs :: [Int]
 
-  λ❯ :sprint xs 
-  xs = _
+λ❯ :sprint liste 
+xs = _
 
 ```
 ---
@@ -35,6 +35,24 @@
 
 * ➡️ Cette liste à un milliard d'éléments ne sera peut-être jamais allouée en mémoire ! 🎉
 ---
+### La 5e dimension
+
+```Haskell
+λ❯ take 5 liste
+[1,2,3,4,5]
+it :: [Int]
+```
+---
+### La 5e dimension
+
+```
+λ❯ take 5 liste
+[1,2,3,4,5]
+it :: [Int]
+λ❯ :sprint liste
+liste = 1 : 2 : 3 : 4 : 5 : _
+```
+---
+
+
 ### Après l'effort, le réconfort
-
-
