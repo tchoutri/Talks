@@ -61,7 +61,7 @@ Cela se traduira en pratique par la conservation de la liste en mémoire, *no ma
 
 ---
 
-@title[En pratique]
+## En pratique
 
 ```Haskell
 $ ghci +RTS -M100m
@@ -75,8 +75,42 @@ xs :: [Int]
 <interactive>: Use `+RTS -M<size>' to increase it.
 ```
 @[1](On lance ghci en lui allouant 100Mo de mémoire vive)
-@[4](On remplis la liste d'un milliard d'éléments)
+@[4](On remplit la liste d'un milliard d'éléments)
 @[6](On tente la somme)
-@[7-8](☠️ RIP)
+@[7-9](☠️ RIP)
 
 ---
+
+### T'as le sum ?
+
+```Haskell
+somme :: [Int] -> Int
+somme []     = 0
+somme (x:xs) = x + somme xs
+```
+---
+
+### T'as le sum ?
+
+```Haskell
+somme [1..5]
+➡️ 1 + somme [2..5]
+➡️ 1 + (2 + somme [3..5])
+➡️ 1 + (2 + (3 + somme [4..5]))
+➡️ 1 + (2 + (3 + (4 + (5 + 0))))
+```
+
+---
+
+## En pratique
+
+```Haskell
+$ ghci +RTS -M30m
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/tchoutri/.ghci
+λ❯ Data.List.foldl' (+) 0 [1..10^6]
+500000500000
+it :: (Enum b, Num b) => b
+```
+@[1](On alloue 30Mo de RAM)
+@[3](On retente l'expérience avec néanmoins l'utilisation de la version stricte de `foldl`)
