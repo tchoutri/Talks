@@ -1,16 +1,12 @@
 <!-- $theme: gaia -->
 <!-- template: invert -->
 
-<img src="images/haskell-paris.jpeg" width="307" align="right"/>
-
 # Lazy evaluation
 ## for the eager beginner
 
 <small>Haskell Paris 29/11/2017</small>
 
 ---
-
-<img src="images/haskell-paris.jpeg" width="307" align="right"/>
 
 # Lazy evaluation
 
