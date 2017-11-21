@@ -105,6 +105,13 @@ somme [1..5]
 
 ---
 
+### Foldr
+
+```Haskell
+λ❯ foldr (\x y -> concat ["(",x," + ",y,")"]) "0" (map show [1..5]) -- piqué de chez Wikipédia!
+"(1 + (2 + (3 + (4 + (5 + 0)))))"
+```
+
 ### Mais tout n'est pas perdu
 
 ```Haskell
@@ -116,6 +123,11 @@ Loaded GHCi configuration from /home/tchoutri/.ghci
 it :: (Enum b, Num b) => b
 ```
 @[1](On alloue 30Mo de RAM)
-@[4](On retente l'expérience avec néanmoins l'utilisation de la version stricte de `foldl`)
+@[4](On retente l'expérience avec néanmoins l'utilisation de la version *stricte* de `foldl`)
 @[5](On a notre résultat 🎉)
 
+---
+
+### Mais pourquoi ?
+
+Et bien     
