@@ -1,2 +1,3 @@
 theme : moon
+theme-override: style.css
 transition : none
