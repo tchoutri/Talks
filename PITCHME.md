@@ -74,10 +74,14 @@ xs :: [Int]
 <interactive>: Current maximum heap size is 104857600 bytes (100 MB).
 <interactive>: Use `+RTS -M<size>' to increase it.
 ```
+@[1](On lance ghci en lui allouant 100Mo de mémoire vive)
+@[3](Héhéhé)
+@[5](On tente la somme)
+
 ---
+### En détail
 
 - `ghci +RTS -M100m` |
 - `λ❯ let xs = [1..10^6] :: [Int]` |
 - `λ❯ sum xs` |
-
 ---
