@@ -76,13 +76,7 @@ xs :: [Int]
 ```
 @[1](On lance ghci en lui allouant 100Mo de mémoire vive)
 @[4](On remplis la liste d'un milliard d'éléments)
-@[5](On tente la somme)
-@[6-8](RIP)
+@[6](On tente la somme)
+@[7-8](☠️ RIP)
 
----
-### En détail
-
-- `ghci +RTS -M100m` |
-- `λ❯ let xs = [1..10^6] :: [Int]` |
-- `λ❯ sum xs` |
 ---
