@@ -8,12 +8,12 @@
 ### Sommaire
 
 * La 5<sup>e</sup> dimension
-* Les astuces (1<sup>e</sup> partie)
+* Après l'effort, le réconfort
 
 
 ---
 
-# La 5e dimension
+### La 5e dimension
 
 ```Haskell
   λ❯ let xs = [1..1000000000] :: [Int]
@@ -24,15 +24,17 @@
 
 ```
 ---
-### La 5<sup>e</sup> dimension
+### La 5e dimension
 
 * Le `_` signifie que la variable `xs` n'a pas été évaluée par l'environnement
 
 ---
-### La 5<sup>e</sup> dimension
+### La 5e dimension
 
 * Le `_` signifie que la variable `xs` n'a pas été évaluée par l'environnement
 
-* :arrow_right: Cette liste à un milliard d'éléments ne sera peut-être jamais allouée en mémoire ! 🎉
-
+* ➡️ Cette liste à un milliard d'éléments ne sera peut-être jamais allouée en mémoire ! 🎉
 ---
+### Après l'effort, le réconfort
+
+
