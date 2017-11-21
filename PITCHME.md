@@ -48,11 +48,15 @@ liste = 1 : 2 : 3 : 4 : 5 : _
 ```
 ---
 
-* Thunk
-  Un pointeur vers un calcul qui ne s'effectuera que lorsqu'il sera demandé
+### Point de cours
 
-* Gargage Collector
-  La *garbage collection* est la gestion automatique du recyclage de la mémoire
+<dl>
+<dt>Thunk</dt>
+  <dd>Un pointeur vers un calcul qui ne s'effectuera que lorsqu'il sera demandé</dd>
+
+<dt>Gargage Collector</dt>
+  <dd>La *garbage collection* est la gestion automatique du recyclage de la mémoire</dd>
+</dl>
 
 ---
 
