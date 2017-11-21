@@ -67,16 +67,17 @@ Cela se traduira en pratique par la conservation de la liste en mémoire, *no ma
 $ ghci +RTS -M100m
 GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
 Loaded GHCi configuration from /home/tchoutri/.ghci
-λ❯ let xs = [1..10^6] :: [Int]
+λ❯ let liste = [1..10^6] :: [Int]
 xs :: [Int]
-λ❯ sum xs
+λ❯ sum liste
 <interactive>: Heap exhausted;
 <interactive>: Current maximum heap size is 104857600 bytes (100 MB).
 <interactive>: Use `+RTS -M<size>' to increase it.
 ```
 @[1](On lance ghci en lui allouant 100Mo de mémoire vive)
-@[3](Héhéhé)
+@[4](On remplis la liste d'un milliard d'éléments)
 @[5](On tente la somme)
+@[6-8](RIP)
 
 ---
 ### En détail
