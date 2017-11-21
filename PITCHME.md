@@ -76,5 +76,8 @@ xs :: [Int]
 ```
 ---
 
-@[1](On lance `ghci` avec l'option `-M` qui permet de limiter l'allocation mémoire à 100Mo.)
-@[2](Foobar.)
+- `ghci +RTS -M100m` |
+- `λ❯ let xs = [1..10^6] :: [Int]` |
+- `λ❯ sum xs` |
+
+---
