@@ -223,7 +223,7 @@ Référence:
 >Haskell High Performance Programming par Samuli Thomasson chez Pakt
 
 Moi:
-<img src="images/qrcode.jpg" width="307" align="right"/>
+<img src="images/qrcode.jpg" width="250" align="right"/>
 * @TechnoEmpress
 * github.com/tchoutri
 
