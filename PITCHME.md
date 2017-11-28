@@ -105,15 +105,33 @@ somme [1..5]
 
 ---
 
-### Foldr
+### Les fold
 
-Nous avons écrit à la main une implémentation de `sum` avec `foldr`:  
+3 types de fold
+
+---
+
+## Foldr
 
 ```Haskell
-λ❯ foldr (\x y -> concat ["(",x," + ",y,")"]) "0" (map show [1..5]) -- piqué de chez Wikipédia!
-"(1 + (2 + (3 + (4 + (5 + 0)))))"
+foldr :: (a -> b -> b) -> b -> [a] -> b
+foldr fun acc []          = acc
+foldr fun acc (head:tail) = fun head (foldr fun acc tail)
+```
+---
+
+## Foldl
+
+```Haskell
+foldl :: (b -> a -> b) -> b -> [a] -> b
+foldl fun acc []          = acc
+foldl fun acc (head:tail) = foldl fun (fun acc head) tail
 ```
 
+---
+## Avenged 7Fold
+
+![](images/avenged-sevenfold.jpg)
 ---
 
 ### Mais tout n'est pas perdu
