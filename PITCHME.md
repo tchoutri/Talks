@@ -13,16 +13,16 @@
 
 ```Haskell
 λ❯ let liste = [1..1000000000] :: [Int]
-xs :: [Int]
+liste :: [Int]
 
 λ❯ :sprint liste 
-xs = _
+liste = _
 
 ```
 ---
-* Le `_` signifie que la variable `xs` n'a pas été évaluée par l'environnement
+* Le `_` signifie que la variable `liste` n'a pas été évaluée par l'environnement
 ---
-* Le `_` signifie que la variable `xs` n'a pas été évaluée par l'environnement
+* Le `_` signifie que la variable `liste` n'a pas été évaluée par l'environnement
 
 * ➡️ Cette liste à un milliard d'éléments ne sera peut-être jamais allouée en mémoire ! 🎉
 ---
@@ -68,7 +68,7 @@ $ ghci +RTS -M100m
 GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
 Loaded GHCi configuration from /home/tchoutri/.ghci
 λ❯ let liste = [1..10^6] :: [Int]
-xs :: [Int]
+liste :: [Int]
 λ❯ sum liste
 <interactive>: Heap exhausted;
 <interactive>: Current maximum heap size is 104857600 bytes (100 MB).
@@ -86,7 +86,7 @@ xs :: [Int]
 ```Haskell
 somme :: [Int] -> Int
 somme []     = 0
-somme (x:xs) = x + somme xs
+somme (head:tail) = x + somme tail
 ```
 ---
 
