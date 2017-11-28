@@ -185,6 +185,7 @@ it :: (Enum b, Num b) => b
 foldl' (+) 0 [1,2,3,4,5]
 ➡️ foldl' (+) 1 [2,3,4,5]
 ➡ foldl' (+) 3 [3,4,5]
+[…]
 ```
 
 ---
@@ -195,10 +196,9 @@ foldl' (+) 0 [1,2,3,4,5]
 ➡️ foldl' (+) 1 [2,3,4,5]
 ➡ foldl' (+) 3 [3,4,5]
 ```
-
 ```Haskell
 foldl' :: (b -> a -> b) -> b -> t a -> b
 foldl' f z0 xs = foldr f' id xs z0
   where f' x k z = k $! f z x
 ```
-@[3](HA-HA !)
+@[6](HA-HA !)
