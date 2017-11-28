@@ -216,4 +216,14 @@ foldl' fun acc list = foldr fun' id list acc
 
 ---
 
-### 
+### *Fin*
+
+Référence:
+
+>Haskell High Performance Programming par Samuli Thomasson chez Pakt
+
+Moi:
+
+* @TechnoEmpress
+* github.com/tchoutri
+
