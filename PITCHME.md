@@ -129,12 +129,33 @@ foldl fun acc (head:tail) = foldl fun (fun acc head) tail
 ```
 
 ---
-## Avenged 7Fold
+
+## Foldl
+
+```Haskell
+foldl :: (b -> a -> b) -> b -> [a] -> b
+foldl fun acc []          = acc
+foldl fun acc (head:tail) = foldl fun (fun acc head) tail
+```
+
+```Haskell
+foldl (+) 0 [1,2,3,4,5]
+➡️ foldl (+) (0 + 1) [2,3,4,5]
+➡ foldl (+) (0 + 1 + 2) [3,4,5]
+➡ foldl (+) (0 + 1 + 2 + 3) [4,5]
+➡ foldl (+) (0 + 1 + 2 + 3 + 4) [5]
+➡ foldl (+) (0 + 1 + 2 + 3 + 4 + 5) []
+➡ (0 + 1 + 2 + 3 + 4 + 5)
+
+```
+
+---
+## 7Fold
 
 ![](images/avenged-sevenfold.jpg)
 ---
 
-### Mais tout n'est pas perdu
+## Foldl'
 
 ```Haskell
 $ ghci +RTS -M30m
@@ -157,3 +178,27 @@ it :: (Enum b, Num b) => b
 
 -- Fred, dans l'univers parallèle où ils explorent la programmation fonctionnelle.
 
+---
+### Mais comment ?
+
+```Haskell
+foldl' (+) 0 [1,2,3,4,5]
+➡️ foldl' (+) 1 [2,3,4,5]
+➡ foldl' (+) 3 [3,4,5]
+```
+
+---
+### Mais comment ?
+
+```Haskell
+foldl' (+) 0 [1,2,3,4,5]
+➡️ foldl' (+) 1 [2,3,4,5]
+➡ foldl' (+) 3 [3,4,5]
+```
+
+```Haskell
+foldl' :: (b -> a -> b) -> b -> t a -> b
+foldl' f z0 xs = foldr f' id xs z0
+  where f' x k z = k $! f z x
+```
+@[3](HA-HA !)
