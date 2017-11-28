@@ -207,9 +207,13 @@ foldl' fun acc list = foldr fun' id list acc
 @[3](HA-HA !)
 
 ---
-### *BANG*
+### \*BANG\*
 
 * `$!` : Opérateur d'application stricte;
 * Comme `$`, il prend une fonction et un argument, et permet d'écrire `fun1 $ fun2 $ arg` au lieu de `fun1 (fun2 arg)`;
 * Contrairement à `$`, il évalue son argument en Weak Head Normal Form, c'est-à-dire que dans le cas d'un type non stricte, comme `(les, tuples)`, on aura
     `(_, _)` au lieu de juste `_`.
+
+---
+
+### 
