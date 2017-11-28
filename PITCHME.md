@@ -227,3 +227,4 @@ Moi:
 * @TechnoEmpress
 * github.com/tchoutri
 
+<img src="images/qrcode.jpg" style="width: 350px;"/>
