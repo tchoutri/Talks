@@ -70,7 +70,8 @@ Cela se traduira en pratique par la conservation de la liste en mémoire, *no ma
 ## En pratique
 
 ```Haskell
-$ ghci +RTS -M100m
+$ ghci +RTS -M100m-24 	15 	2017-08-24 	2017-11-24 	2017-08-25
+2017-11-23 	0
 GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
 Loaded GHCi configuration from /home/tchoutri/.ghci
 λ❯ let liste = [1..10^6] :: [Int]
@@ -194,14 +195,6 @@ foldl' (+) 0 [1,2,3,4,5]
 […]
 ```
 
----
-### Mais comment ?
-
-```Haskell
-foldl' (+) 0 [1,2,3,4,5]
-➡️ foldl' (+) 1 [2,3,4,5]
-➡ foldl' (+) 3 [3,4,5]
-```
 ---
 ### Mais comment ?
 
