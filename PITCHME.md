@@ -9,6 +9,12 @@
 
 ---
 
+## La 5e dimension
+
+![](images/profunctor.jpg)
+
+---
+
 ### La 5e dimension
 
 ```Haskell
