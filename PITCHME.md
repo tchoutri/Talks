@@ -11,7 +11,7 @@
 
 ## La 5e dimension
 
-<img src="images/profunctor.jpg" width="550"/>
+<img src="images/profunctor.jpg" width="500"/>
 
 ---
 
