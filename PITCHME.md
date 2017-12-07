@@ -78,7 +78,7 @@ Il sait tout faire !
 
 <dl>
   <dt>`one_for_one`</dt>
-    <dd>Tu meure, tu reviens à la vie</dd>
+    <dd>Tu meurs, tu reviens à la vie</dd>
   <br />
   <dt>`one_for_all`</dt>
     <dd>Ta pote meure, t'es bonne pour y passer aussi :/</dd>
@@ -248,11 +248,10 @@ OTP nous offre de façon claire un outil qui permet de définir un cluster d'app
 ### Distribuer
 
 ```Shell
-start-dist.sh                                                                                                                                                      130 ↵
-#!/bin/sh
+start-dist.sh
+#!/bin/s
 
 PORT=400${1} iex --name node${1}@127.0.0.1 --erl "-config config/node${1}.config" -S mix phx.server
-
 ```
 
 ---
