@@ -66,7 +66,7 @@ Il sait tout faire !
 
 <dl>
 <dt>Superviser</dt>
-  <dd>Lier un processus (superviser) à un autre processus (superviseur) à son démarrage</dd>
+  <dd>Lier un processus (supervisé) à un autre processus (superviseur) à son démarrage</dd>
   <br />
 <dt>Stratégie</dt>
   <dd>Le plan d'action qui va être mis en place à la mort d'un processus supervisé</dd>
