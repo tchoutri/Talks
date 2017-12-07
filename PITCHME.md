@@ -245,6 +245,20 @@ OTP nous offre de façon claire un outil qui permet de définir un cluster d'app
 
 ---
 
+### Distribuer
+
+```Shell
+start-dist.sh                                                                                                                                                      130 ↵
+#!/bin/sh
+
+PORT=400${1} iex --name node${1}@127.0.0.1 --erl "-config config/node${1}.config" -S mix phx.server
+
+```
+
+---
+## DEMO !
+
+---
 
 ### *Fin*
 
