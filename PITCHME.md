@@ -181,7 +181,8 @@ On peut alors éteindre de façon arbitraire l'application qui s'occupe de l'API
 
 ### Isoler sans risque
 
-Avarie sur l'interface web ?
+Avarie sur l'interface web ?  
+
   ➡️ Quand même recevoir des notifications sur la DB, l'API, dans les messageries.
 
 ---
