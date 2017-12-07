@@ -97,7 +97,7 @@ Il sait tout faire !
 
 ---
 
-### Superviser son architecture
+### Superviser
 
 <img src="images/Superviser.png" width=600 height=500/>
 
@@ -107,7 +107,7 @@ Il sait tout faire !
 
 ---
 
-### Renforcer son application
+### Renforcer
 
 * Lui donner une base stable
 
@@ -115,13 +115,13 @@ Il sait tout faire !
 
 ---
 
-### Renforcer son application
+### Renforcer
 
 OTP est une histoire de composants
 
 ---
 
-### Renforcer son application
+### Renforcer
 
 OTP est une histoire de composants
 
@@ -135,7 +135,7 @@ OTP est une histoire de composants
 
 ---
 
-### Renforcer son application
+### Renforcer
 
 <dl>
   <dt>Umbrella</dt>
@@ -187,9 +187,64 @@ On reçoit quand même les notifications sur la DB, l'API, dans les messageries.
 
 ---
 
-## Distribuer son application
+## Distribuer son architecture
 
 ---
+
+### Distribuer
+
+OTP nous offre de façon claire un outil qui permet de définir un cluster d'applications
+
+---
+
+### Distribuer
+
+```Erlang
+==> node1.config <==
+[{kernel,
+  [
+    {distributed, [{g4, 5000, ['node1@127.0.0.1', 'node2@127.0.0.1', 'node3@127.0.0.1']}]},
+    {sync_nodes_optional, ['node2@127.0.0.1', 'node3@127.0.0.1']},
+    {sync_nodes_timeout, 2000}
+  ]}
+].
+
+==> node2.config <==
+[{kernel,
+  [
+    {distributed, [{g4, 5000, ['node1@127.0.0.1', 'node2@127.0.0.1', 'node3@127.0.0.1']}]},
+    {sync_nodes_optional, ['node1@127.0.0.1', 'node3@127.0.0.1']},
+    {sync_nodes_timeout, 2000}
+  ]}
+].
+
+==> node3.config <==
+[{kernel,
+  [
+    {distributed, [{g4, 5000, ['node1@127.0.0.1', 'node2@127.0.0.1', 'node3@127.0.0.1']}]},
+    {sync_nodes_optional, ['node1@127.0.0.1', 'node2@127.0.0.1']},
+    {sync_nodes_timeout, 2000}
+  ]}
+].
+
+```
+
+---
+
+### Distribuer
+
+
+```Nginx
+# À insérer dans le block `http` de `nginx.conf`
+    upstream g4 {
+        server 127.0.0.1:4001;
+        server 127.0.0.1:4002;
+        server 127.0.0.1:4003;
+    }
+```
+
+---
+
 
 ### *Fin*
 
