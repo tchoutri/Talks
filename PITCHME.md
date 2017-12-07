@@ -148,13 +148,13 @@ OTP est une histoire de composants
 
 On peut ainsi séparer les composants en : 
 
-1. Core
-2. Web
-3. Email
-4. IRC
-5. Discord
-6. Slack
-7. Endpoint API
+* Core
+* Web
+* Email
+* IRC
+* Discord
+* Slack
+* Endpoint API
 
 @[1](Un `Core` qui va s'occuper des relations à la base de données)
 @[2](Une interface `Web` avec ses modèles / vues / controlleurs)
