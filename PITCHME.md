@@ -1,11 +1,11 @@
 ## Architectures Résilientes
-### Avec Erlang/OTP et Elixir
+## Avec Erlang/OTP et Elixir
 
 <small>Vente Privée 08/12/2017</small>
 
 ---
 
-Sommaire: 
+### Sommaire: 
 
 1. Modéliser son architecture
 
