@@ -89,7 +89,7 @@ Il sait tout faire !
 
 ### Superviser son architecture
 
-![](images/Superviser.png)
+<img src="images/Superviser.png" width=500 height=500/>
 
 ---
 
