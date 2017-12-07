@@ -29,7 +29,13 @@
 
 ### Modéliser son architecture
 
->Investir une heure de temps de cerveau peut épargner un mois de debugging
+>Investir une heure de temps de cerveau peut épargner un mois de réécriture
+
+---
+
+### Modéliser son architecture
+
+
 
 ---
 
