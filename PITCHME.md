@@ -64,11 +64,9 @@ Il sait tout faire !
 
 ### *Fin*
 
-Références:
+Référence:
 
 >Cesarini, Vinoski – Designing for Scalability with Erlang/OTP
-
->Benjamin Tan Wei Hao – The Little Elixir and OTP Handbook 
 
 Moi:
 <img src="images/qrcode.jpg" width="250" align="right"/>
