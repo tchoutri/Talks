@@ -1,7 +1,7 @@
 # Lazy evaluation
 ## for the eager beginner
 
-<small>Haskell Paris 29/11/2017</small>
+<small>Vente Privée 8/12/2017</small>
 
 ---
 
