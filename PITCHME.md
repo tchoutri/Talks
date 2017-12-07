@@ -183,7 +183,7 @@ On peut alors éteindre de façon arbitraire l'application qui s'occupe de l'API
 
 Avarie sur l'interface web ?  
 
-  ➡️ Quand même recevoir des notifications sur la DB, l'API, dans les messageries.
+On reçoit quand même les notifications sur la DB, l'API, dans les messageries.
 
 ---
 
