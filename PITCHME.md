@@ -78,6 +78,10 @@ Il sait tout faire !
 
 * `one_for_one`  : Tu meure, tu reviens à la vie
 * `one_for_all`  : Ton pote meure, t'es bonne pour y passer aussi :/
+
+
+### Stratégies 
+
 * `rest_for_one` : Tous les workers d'un arbre de supervision qui ont été déclarés et démarrés après le processus mort seront abattus aussi.
 * `simple_one_for_one` : On démarre des processus au cours de l'execution du programme, dans 2 secondes ou 10 ans.
 
