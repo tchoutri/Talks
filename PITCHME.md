@@ -176,12 +176,13 @@ On peut ainsi séparer les composants en :
 
 On peut alors éteindre de façon arbitraire l'application qui s'occupe de l'API, bazarder IRC… <sup><sup><small>xkcd.com/1782</small></sup></sup>
 
+
 --- 
 
 ### Isoler sans risque
 
-De la même façon, on peut avoir une avarie sur l'interface web, et quand même recevoir des notifications sur la base de données ou l'usage de l'API sur les
-messageries.
+Avarie sur l'interface web ?
+  ➡️ Quand même recevoir des notifications sur la DB, l'API, dans les messageries.
 
 ---
 
