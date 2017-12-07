@@ -187,7 +187,7 @@ On reçoit quand même les notifications sur la DB, l'API, dans les messageries.
 
 ---
 
-### 
+## Distribuer son application
 
 ---
 
