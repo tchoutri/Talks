@@ -133,6 +133,20 @@ OTP est une histoire de composants
 @[2](L'application OTP)
 @[3](Les regroupemments d'applications)
 
+---
+
+### Renforcer son application
+
+<dl>
+  <dt>Umbrella</dt>
+  <dd>Les projets "umbrella" sont utilisés (et utiles) pour gérer plusieurs applications OTP à la fois.</dd>
+</dl>
+
+---
+
+### Renforcer
+
+<img src="images/Superviser.png" width=600 height=500/>
 
 ---
 
