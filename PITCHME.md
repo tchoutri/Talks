@@ -1,5 +1,5 @@
-# Architectures Résilientes
-## Avec Elixir/OTP
+## Architectures Résilientes
+### Avec Erlang/OTP et Elixir
 
 <small>Vente Privée 08/12/2017</small>
 
@@ -17,6 +17,21 @@ Sommaire:
 
 ---
 
+### Modéliser son architecture
+
+---
+
+### Modéliser son architecture
+
+>Hours of programming can save weeks of planning
+
+---
+
+### Modéliser son architecture
+
+>Investir une heure de temps de cerveau peut épargner un mois de debugging
+
+---
 
 
 
