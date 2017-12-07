@@ -62,6 +62,37 @@ Il sait tout faire !
 
 ---
 
+### Point de cours
+
+<dl>
+<dt>Superviser</dt>
+  <dd>Lier un processus (superviser) à un autre processus (superviseur) à son démarrage</dd>
+  <br />
+<dt>Stratégie</dt>
+  <dd>Le plan d'action qui va être mis en place à la mort d'un processus supervisé</dd>
+</dl>
+
+---
+
+### Stratégies
+
+* `one_for_one`  : Tu meure, tu reviens à la vie
+* `one_for_all`  : Ton pote meure, t'es bonne pour y passer aussi :/
+* `rest_for_one` : Tous les workers d'un arbre de supervision qui ont été déclarés et démarrés après le processus mort seront abattus aussi.
+* `simple_one_for_one` : On démarre des processus au cours de l'execution du programme, dans 2 secondes ou 10 ans.
+
+---
+
+### Superviser son architecture
+
+![](images/Superviser.png)
+
+---
+
+
+
+---
+
 ### *Fin*
 
 Référence:
