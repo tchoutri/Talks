@@ -35,10 +35,8 @@
 
 ### Modéliser son architecture
 
-<img src="images/Modéliser.png"/>
-
+![](images/Modéliser.png)
 ---
-
 
 ### Le Worker, unité de base du modèle d'acteur
 
@@ -59,6 +57,11 @@ Il sait tout faire !
 @[5](Ta prochaine startup !)
 
 ---
+
+### Superviser son architecture
+
+---
+
 ### *Fin*
 
 Référence:
