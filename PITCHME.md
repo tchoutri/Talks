@@ -203,7 +203,8 @@ OTP nous offre de façon claire un outil qui permet de définir un cluster d'app
 %% node1.config
 [{kernel,
   [
-    {distributed, [{g4, 5000, ['node1@127.0.0.1', 'node2@127.0.0.1',
+    {distributed, [{g4, 5000, ['node1@127.0.0.1', 
+                               'node2@127.0.0.1',
                                'node3@127.0.0.1']}]},
 
     {sync_nodes_optional, ['node2@127.0.0.1', 'node3@127.0.0.1']},
