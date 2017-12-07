@@ -146,7 +146,7 @@ OTP est une histoire de composants
 
 ### Renforcer
 
-<img src="images/Superviser.png" width=600 height=500/>
+<img src="images/Renforcer.png" width=600 height=500/>
 
 ---
 
