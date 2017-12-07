@@ -174,7 +174,7 @@ On peut ainsi séparer les composants en :
 
 ### Isoler sans risque
 
-On peut alors éteindre de façon arbitraire l'application qui s'occupe de l'API, bazarder IRC <sup><sup><sup>xkcd.com/1782</sup></sup></sup>
+On peut alors éteindre de façon arbitraire l'application qui s'occupe de l'API, bazarder IRC <sup><sup><sup><sup>xkcd.com/1782</sup></sup></sup></sup>
 
 ---
 
