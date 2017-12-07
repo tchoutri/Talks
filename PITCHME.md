@@ -103,6 +103,35 @@ Il sait tout faire !
 
 ---
 
+## Renforcer son application
+
+---
+
+### Renforcer son application
+
+* Lui donner une base stable
+
+* Pratiquer un niveau d'isolation supérieur à la simple supervision ou aux acteurs
+
+---
+
+### Renforcer son application
+
+OTP est une histoire de composants
+
+---
+
+### Renforcer son application
+
+OTP est une histoire de composants
+
+* Micro-composants
+* Moyen-composants
+* Macro-composants
+
+@[1](Le processus, l'acteur)
+@[2](L'application OTP)
+@[3](Les regroupemments d'applications)
 
 
 ---
