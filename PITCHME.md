@@ -76,14 +76,24 @@ Il sait tout faire !
 
 ### Stratégies
 
-* `one_for_one`  : Tu meure, tu reviens à la vie
-* `one_for_all`  : Ton pote meure, t'es bonne pour y passer aussi :/
+<dl>
+  <dt>`one_for_one`</dt>
+    <dd>Tu meure, tu reviens à la vie</dd>
+  <br />
+  <dt>`one_for_all`</dt>
+    <dd>Ta pote meure, t'es bonne pour y passer aussi :/</dd>
+</dl>
 
 ---
 ### Stratégies 
 
-* `rest_for_one` : Tous les workers d'un arbre de supervision qui ont été déclarés et démarrés après le processus mort seront abattus aussi.
-* `simple_one_for_one` : On démarre des processus au cours de l'execution du programme, dans 2 secondes ou 10 ans.
+<dl>
+  <dt>`rest_for_one`</dt>
+    <dd>C'est toi le facteur biologique, tous les poulets qui sont nés après toi vont passer à la trappe</dd>
+  </br />
+  <dt>`simple_one_for_one`</dt>
+  <dd>Les processus vont démarrer et s'arrêter pendant l'execution de l'application, dans 30 secondes ou 10 ans.</dd>
+</dl>
 
 ---
 
