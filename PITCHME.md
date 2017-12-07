@@ -35,7 +35,7 @@
 
 ### Modéliser son architecture
 
-
+<img src="images/Modéliser.png"/>
 
 ---
 
