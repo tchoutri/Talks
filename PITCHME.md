@@ -44,11 +44,13 @@
 
 Il sait tout faire !
 
+```
 * Calculer fibonacci
 * Envoyer des requêtes SQL
 * Sérialiser du JSON
 * Exposer un serveur web
 * ➡️ Bam, Fibonacci As A Service!
+```
 
 @[1](Du calcul)
 @[2](Garder un file descriptor en mémoire)
