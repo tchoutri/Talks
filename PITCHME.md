@@ -17,7 +17,7 @@
 
 ---
 
-### Modéliser son architecture
+## Modéliser son architecture
 
 ---
 
@@ -58,7 +58,7 @@ Il sait tout faire !
 
 ---
 
-### Superviser son architecture
+## Superviser son architecture
 
 ---
 
