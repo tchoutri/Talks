@@ -146,7 +146,23 @@ OTP est une histoire de composants
 
 ### Renforcer
 
+On peut ainsi séparer les composants en : 
+
+1. Un `Core` qui va s'occuper des relations à la base de données
+2. Une interface `Web` avec ses modèles / vues / controlleurs
+3. L'adaptateur `Email` pour le top-management entre deux formations chez SAP
+4. L'adaptateur `IRC` pour les bourrines sur emacs
+5. L'adaptateur `Discord` pour les gamers du helpdesk 
+6. L'adaptateur `Slack` pour le middle-management
+7. L'API JSON/GraphQL pour les tierces-parties
+
+
+---
+
+### Renforcer
+
 <img src="images/Renforcer.png" width=600 height=500/>
+
 
 ---
 
