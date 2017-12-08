@@ -74,7 +74,7 @@ Cela se traduira en pratique par la conservation de la liste en mémoire, *no ma
 $ ghci +RTS -M100m
 GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
 Loaded GHCi configuration from /home/tchoutri/.ghci
-λ❯ let liste = [1..10^6] :: [Int]
+λ❯ let liste = [1..10^9] :: [Int]
 liste :: [Int]
 λ❯ sum liste
 <interactive>: Heap exhausted;
