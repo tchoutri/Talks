@@ -1,7 +1,9 @@
 # Lazy evaluation
 ## for the eager beginner
 
-<small>Vente Privée 8/12/2017</small>
+<!-- <small>Vente Privée 8/12/2017</small> -->
+<small>Meetup Haskell Paris ~ 31/01/2018</small>
+
 
 ---
 
