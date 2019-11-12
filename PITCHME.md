@@ -1,11 +1,12 @@
 ## Architectures Résilientes
 ## Avec Erlang/OTP et Elixir
 
-<small>Vente Privée 08/12/2017</small>
+* Vente Privée 08/12/2017
+* PSUG 28/12/2019
 
 ---
 
-### Sommaire: 
+### Sommaire:
 
 1. Modéliser son architecture
 
@@ -23,19 +24,21 @@
 
 ### Modéliser son architecture
 
->Hours of programming can save weeks of planning
+>Hours of programming can save you weeks of planning
+>-- Jimmy Bogard
 
 ---
 
 ### Modéliser son architecture
 
->Investir une heure de temps de cerveau peut épargner un mois de réécriture
+>Investir une heure de temps de cerveau peut vous épargner un mois de réécriture
 
 ---
 
 ### Modéliser son architecture
 
-![](images/Modéliser.png)
+<img src="images/Modeliser.jpg" width=600 height=500/>
+
 ---
 
 ### Le Worker, unité de base du modèle d'acteur
@@ -52,8 +55,8 @@ Il sait tout faire !
 
 @[1](Du calcul)
 @[2](Garder un file descriptor en mémoire)
-@[3](Ton client HTTP)
-@[4](Ton format de données)
+@[3](Ton format de données)
+@[4](Ton protocole de transport)
 @[5](Ta prochaine startup !)
 
 ---
@@ -62,7 +65,7 @@ Il sait tout faire !
 
 ---
 
-### Point de cours
+### Terminologie
 
 <dl>
 <dt>Superviser</dt>
@@ -85,7 +88,7 @@ Il sait tout faire !
 </dl>
 
 ---
-### Stratégies 
+### Stratégies
 
 <dl>
   <dt>`rest_for_one`</dt>
@@ -126,7 +129,7 @@ OTP est une histoire de composants
 OTP est une histoire de composants
 
 * Micro-composants
-* Moyen-composants
+* Méso-composants
 * Macro-composants
 
 @[1](Le processus, l'acteur)
@@ -146,7 +149,7 @@ OTP est une histoire de composants
 
 ### Renforcer
 
-On peut ainsi séparer les composants en : 
+On peut ainsi séparer les composants en :
 
 * Core
 * Web
@@ -160,30 +163,42 @@ On peut ainsi séparer les composants en :
 @[2](Une interface `Web` avec ses controlleurs, son routeur et ses templates)
 @[3](L'adaptateur `Email` pour le top-management entre deux formations chez SAP)
 @[4](L'adaptateur `IRC` pour les bourrines sur emacs)
-@[5](L'adaptateur `Discord` pour les gamers du helpdesk )
+@[5](L'adaptateur `Discord` pour les gameuses du helpdesk )
 @[6](L'adaptateur `Slack` pour le middle-management)
-@[7](L'API JSON/GraphQL pour les tierces-parties)
+@[7](L'API EDIFACT/REST/GraphQL pour les tierces-parties)
 
 ---
 
-### Isoler sans risque
+### Isoler sans (trop de) risques
 
 <img src="images/Renforcer.png" width=600 height=500/>
 
 ---
 
-### Isoler sans risque
+### Isoler sans (trop de) risques
 
 On peut alors éteindre de façon arbitraire l'application qui s'occupe de l'API, bazarder IRC… <sup><sup><small>xkcd.com/1782</small></sup></sup>
 
+---
 
---- 
-
-### Isoler sans risque
+### Isoler sans (trop de) risques
 
 Avarie sur l'interface web ?  
 
 On reçoit quand même les notifications sur la DB, l'API, dans les messageries.
+
+---
+
+### Quel degré d'isolation ?
+
+La réponse est : ça dépend.
+
+---
+
+### Quel degré d'isolation ?
+
+* Ne faîtes pas des clusters régionaux avec un Kubernetes si vous avez une PME dans le Loire-et-Cher.
+* Ne vous contentez pas de ce que je viens de vous dire si vous opérez sur trois continents et quatorze timezones !
 
 ---
 
@@ -199,11 +214,11 @@ OTP nous offre de façon claire un outil qui permet de définir un cluster d'app
 
 ### Distribuer
 
-```Erlang
+```erlang
 %% node1.config
 [{kernel,
   [
-    {distributed, [{g4, 5000, ['node1@127.0.0.1', 
+    {distributed, [{g4, 5000, ['node1@127.0.0.1',
                                'node2@127.0.0.1',
                                'node3@127.0.0.1']}]},
 
@@ -260,7 +275,9 @@ OTP nous offre de façon claire un outil qui permet de définir un cluster d'app
 start-dist.sh
 #!/bin/sh
 
-PORT=400${1} iex --name node${1}@127.0.0.1 --erl "-config config/node${1}.config" -S mix phx.server
+PORT=400${1} iex --name node${1}@127.0.0.1 \
+                 --erl "-config config/node${1}.config" \
+                 -S mix phx.server
 ```
 
 ---
